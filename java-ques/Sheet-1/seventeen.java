@@ -8,16 +8,16 @@ public class seventeen {
         int count = 0;
         int[] freq = new int[10];
         while(num>0){
-            int digit = num  % 10;
-            freq[digit] += 1;
-            num = num/10;
+            int dight = num %10;
+            freq[dight] += 1;
+            num /=10;
         }
-        for (int i = 0; i <10; i++){
-        if(freq[i] == 1 ){
-            count = count+1;
-        }
-            
+        for(int i=0; i< 10;i++){
+            if(freq[i]==1){
+                count++;
+            }
         }
         System.out.println(count);
     }
 }
+
