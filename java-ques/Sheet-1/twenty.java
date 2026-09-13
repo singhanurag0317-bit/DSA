@@ -1,0 +1,15 @@
+public class twenty {
+    public static void main(String[] args) {
+        int num = 298475;
+        num = Math.abs(num);
+        int oddsum = 0;
+        while(num>0){
+            int digit = num%10;
+            if(digit % 2 != 0){
+                oddsum = oddsum + digit;
+            }
+            num = num/10;
+        }
+        System.out.println(oddsum);
+    }
+}
